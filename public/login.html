@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/40087/thar-exterior-left-rear-three-quarter.jpeg?q=80');
+}
+
+.container {
+  width: 400px;
+  background-color:whitesmoke;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Login</h1>
+    <form method="post" action="/loginsubmit">
+        Email<input type="email" name="email" placeholder="enter your email"><br>
+        Password<input type="password" name="password" placeholder="enter your pasword"><br>
+        <button type="submit">LOGIN</button>
+    </form>
+    </div>
+</body>
+</html>
